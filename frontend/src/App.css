@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #2b4eff;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1;
+  margin: 5px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+}
+
+.form-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.form-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.form-box h3 {
+  margin: 0;
+  color: #2b4eff;
+}
+
+.form-box input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-box button {
+  background-color: #2b4eff;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background-color: #1a36c9;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th {
+  background: #f2f5fb;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.data-table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.tag {
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+.tag.active {
+  background: #28a745;
+}
+
+.tag.soon {
+  background: #ffc107;
+}
+
+.tag.expired {
+  background: #dc3545;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 50px;
+}

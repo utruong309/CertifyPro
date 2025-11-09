@@ -104,11 +104,9 @@ def delete_certification(cert_id: int, db: Session = Depends(get_db)):
 
 
 # ---------- DASHBOARD STATS ----------
-@app.get("/certifications/stats")
+@app.get("/certifications/stats", response_model=None)
 def get_dashboard_stats(db: Session = Depends(get_db)):
-    # Calculate date difference in days using SQLite julianday()
     days_diff = func.julianday(models.Certification.expiry_date) - func.julianday(func.date('now'))
-
     total = db.query(models.Certification).count()
     expired = db.query(models.Certification).filter(models.Certification.expiry_date < func.date('now')).count()
     expiring = db.query(models.Certification).filter(days_diff.between(0, 30)).count()
