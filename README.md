@@ -10,7 +10,7 @@ A lightweight system to track tax-professional certifications (CPA, EA, etc.), r
   - **Expiring Soon**: ≤ 30 days
   - **Expired**: past expiry
 - Dashboard stats (total/active/expiring/expired)
-- Search & filter (name, type, status) *(endpoint provided; UI optional)*
+- Search & filter (name, type, status) 
 - Document upload (PDF/image) linked to a certification
 
 ## Tech Stack
